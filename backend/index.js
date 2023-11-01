@@ -33,7 +33,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
       },
     ],
     mode: "payment",
-    success_url: "http://127.0.0.1:8000/patient-discharge",
+    success_url: "https://stripefrontend.vercel.app/success",
     cancel_url: "https://stripefrontend.vercel.app/fail",
   })
 
