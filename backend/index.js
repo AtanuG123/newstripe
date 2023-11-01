@@ -5,7 +5,7 @@ const  cors = require('cors');
 
 
 
-const stripe = require("stripe")('sk_test_51NopitSJ60SygxplXTGHnfiLVANYiPF07I3hfqEjZtYnqVLKIys161qlgqCUGHgTCdIxxuTWflT18L4DWyclZuSZ00EhBZmkg8');
+const stripe = require("stripe")(process.env.REACT_APP_STRIPE_KEY);
 const app = express();
 app.use(express.json());
 app.use(cors());
